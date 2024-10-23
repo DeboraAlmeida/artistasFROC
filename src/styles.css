@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 9, 0.98), rgba(0, 0, 9, 0.40), rgba(0, 0, 9, 0.7), rgba(0, 0, 9, 0.9)), url(../assets/images/auroraBoreal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h2, p {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 1.3rem;
+}
+
+.banner, .card {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cecece88;
+  border-radius: .5rem;
+}
+
+.banner {
+  width: 70%;
+  min-height: 45vh;
+}
+
+.rowContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  width: 40%;
+  padding: .8rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #0e1939aa;
+  border: 1px solid #0e1939;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz {
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  width: 80%;
+  min-height: 50vh;
+}
+
+.card__info {
+  margin: 1rem auto;
+}
+
+.card__title {
+  margin: 1rem auto 2rem auto;
+}
+
+.answers__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer__btn {
+  width: 100%;
+  padding: .7rem 1rem;
+  background-color: #cecece99;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 2px #aaa;
+  border-radius: .3rem;
+  text-align: left;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.answer__btn:disabled {
+  cursor: auto;
+}
+
+.next__btn {
+  width: 20%;
+  margin: 2rem 0 1.5rem 0;
+  padding: .7rem 1rem;
+  color: #fff;
+  word-spacing: .2rem;
+  text-transform: uppercase;
+  background-color: green;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.next__btn:disabled {
+  background-color: gray;
+  cursor: auto;
+}

@@ -197,14 +197,24 @@ let idCount = 0
 let score = 0
 const randomIds = []
 
+const header = document.querySelector('header')
+
 const card = document.getElementById('quiz')
 card.style.setProperty('display', 'none')
 
+const scoreBox = document.getElementById('banner__headline')
+
+const bannerInfo = document.getElementById('banner__info')
+
+const info = document.getElementById('info')
+info.style.setProperty('display', 'none')
+
 const quizBtn = document.getElementById('quiz-btn')
 
+const infoBtn = document.getElementById('info-btn')
+
 const createCard = () => {
-  // card.innerHTML = ''
-  card.style.setProperty('display', 'block')
+  card.style.setProperty('display', 'flex')
 
   const questionCard = document.createElement('div')
   questionCard.setAttribute('class', 'card')
@@ -217,35 +227,8 @@ const createCard = () => {
   cardTitle.setAttribute('class', 'card__title')
   cardTitle.textContent = cardData[randomIds[idCount]].question
 
-  /* const cardAnswer1 = document.createElement('button')
-  cardAnswer1.setAttribute('class', 'answer__button')
-  cardAnswer1.textContent = cardData[randomIds[idCount]].answers[0]
-
-  const cardAnswer2 = document.createElement('button')
-  cardAnswer2.setAttribute('class', 'answer__button')
-  cardAnswer2.textContent = cardData[randomIds[idCount]].answers[1]
-
-  const cardAnswer3 = document.createElement('button')
-  cardAnswer3.setAttribute('class', 'answer__button')
-  cardAnswer3.textContent = cardData[randomIds[idCount]].answers[2]
-
-  const cardAnswer4 = document.createElement('button')
-  cardAnswer4.setAttribute('class', 'answer__button')
-  cardAnswer4.textContent = cardData[randomIds[idCount]].answers[3] */
-
   const answersBox = document.createElement('div')
   answersBox.setAttribute('class', 'answers__box')
-
-  /* for (let i = 0; i < cardData[randomIds[idCount]].answers.length; i++) {
-    const answer = document.createElement('input')
-    answer.setAttribute('class', 'answer__radio')
-    answer.setAttribute('type', 'radio')
-    answer.setAttribute('id', `answer__${i}`)
-    answer.setAttribute('name', `answer__${i}`)
-    answer.setAttribute('label', `${cardData[randomIds[idCount]].answers[i]}`)
-    // answer.textContent = types[i]
-    answersBox.append(answer)
-  } */
   
   for (let i = 0; i < cardData[randomIds[idCount]].answers.length; i++) {
     const answer = document.createElement('button')
@@ -256,6 +239,7 @@ const createCard = () => {
   }
 
   const nextCard = document.createElement('button')
+  nextCard.setAttribute('class', 'next__btn')
   nextCard.disabled = true
   nextCard.textContent = idCount < 4 ? 'Próximo' : 'Finalizar'
   
@@ -331,7 +315,11 @@ const createCard = () => {
     if (idCount < 5) {
       createCard()
     } else {
-      card.innerHTML = `Acabou!! Pontiação final: ${score} / 5`
+      card.innerHTML = ''
+      scoreBox.textContent = `Acabou!! Pontuação final: ${score} / 5`
+      bannerInfo.style.setProperty('display', 'none')
+      quizBtn.textContent ='Jogar Novamente'
+      header.style.setProperty('display', 'flex')
       idCount = 0
     }
   })
@@ -340,6 +328,8 @@ const createCard = () => {
 }
 
 quizBtn.addEventListener('click', function() {
+  header.style.setProperty('display', 'none')
+  info.style.setProperty('display', 'none')
   card.innerHTML = ''
   min = Math.ceil(1);
   max = Math.floor(cardData.length);
@@ -350,4 +340,8 @@ quizBtn.addEventListener('click', function() {
     }
   }
   createCard()
+})
+
+infoBtn.addEventListener('click', function() {
+  info.style.setProperty('display', 'flex')
 })
