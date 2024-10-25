@@ -39,7 +39,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #cecece88;
+  background-color: #efefefaa;
   border-radius: .5rem;
 }
 
@@ -146,7 +146,7 @@ section {
   width: 80%;
   background-color: #ffffffbb;
   border-radius: .5rem;
-  margin: 1rem auto;
+  margin: 1rem auto 3rem auto;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -176,6 +176,7 @@ section {
 
 .artist__about, .artist__works, .artist__social {
   width: 95%;
+  margin-bottom: 1rem auto;
   /* display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -190,7 +191,7 @@ section {
 
 .artist  h3 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1.1rem auto 1rem auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -229,5 +230,29 @@ section {
   }
   .card__info {
     text-align: justify;
+  }
+  .artist {
+    width: 85%;
+    padding: .9rem .3rem;
+  
+  }
+}
+
+@media screen and (max-width: 468px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 70%;
+    margin: .7rem auto;
+    font-size: .9rem;
   }
 }

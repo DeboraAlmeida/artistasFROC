@@ -43,7 +43,7 @@ const cardData = [
       },
       {
         "id": 3,
-        "answer": "Pernambuco de Oliveira",
+        "answer": "Carmem Miranda",
         "value": false
       },
       {
@@ -136,7 +136,7 @@ const cardData = [
   },
   {
     "id": 6,
-    "information": "Nos anos 1990, Robertinho Silva montou um grupo com seus filhos Ronaldo Silva, Pablo Silva, Tiago Silva e Vanderlei Silva. O grupo se apresentou em shows solo e também integrou a banda de Milton Nascimento.",
+    "information": "Nos anos 90, Robertinho Silva montou um grupo com seus filhos Ronaldo Silva, Pablo Silva, Tiago Silva e Vanderlei Silva. O grupo se apresentou em shows solo e também integrou a banda de Milton Nascimento.",
     "question": "Qual era o nome do grupo de Robertinho Silva e seus filhos?",
     "answers": [
       {
@@ -187,12 +187,147 @@ const cardData = [
         "value": true
       }
     ]
+  },
+  {
+    "id": 8,
+    "information": "'Eu nasci no teatro para o teatro, do teatro, e me sinto felicíssima com isto. O teatro me deu todas as grandes alegrias da vida, todas as emoções. Eu adoro o teatro e acho que tudo que está acontecendo é válido, validíssimo. É transição, movimento, caldeamento, efervescência, e eu espero as grandes coisas que vão surgir. Creio acima de tudo, na eternidade do teatro. O teatro permanecerá e nós com ele.' - citação para o jornal O Globo, em 1981. Dulcina de Morais, grande nome do teatro brasileiro, veio de uma família de artistas e iniciou sua carreira muito cedo.",
+    "question": "Aos 15 anos, Dulcina de Morais estreou como protagonista em qual peça?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Mulheres",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Amor",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Chuva",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Lua Cheia",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "information": "Em 1955, foi fundada a FBT - Fundação Brasileira de Teatro, uma das instituições mais importantes para a formação de artistas e para o desenvolvimento das artes cênicas no Brasil.",
+    "question": "Qual importante figura do teatro brasileiro foi responsável pela fundação da FBT na década de 50??",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Dulcina de Morais",
+        "value": true
+      },
+      {
+        "id": 2,
+        "answer": "Plínio Marcos",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Leopoldo Fróes",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Pernambuco de Oliveira",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "information": "Pernambuco de Oliveira fundou a primeira companhia profissional dedicada ao teatro infantil no Brasil, no ano de 1949, em parceria de Pedro Veiga. Inicialmente encenavam adaptações da obra de Monteiro Lobato e mais tarde, textos de sua própria autoria.",
+    "question": "Qual é o nome dessa companhia dedicada exclusivamente ao teatro infantil fundada por Pernambuco de Oliveira?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Cia. de Comédias Aimée",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Teatro da Carochinha",
+        "value": true
+      },
+      {
+        "id": 3,
+        "answer": "Teatro dos Sete",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Cia. A Revolta dos Brinquedos",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "information": "Pernambuco de Oliveira fundou a primeira companhia profissional dedicada ao teatro infantil no Brasil, no ano de 1949, em parceria de Pedro Veiga. Inicialmente encenavam adaptações da obra de Monteiro Lobato e mais tarde, textos de sua própria autoria.",
+    "question": "Das opções abaixo, qual traz o nome de 2 peças infantis de autoria de Pernambuco de Oliveira?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'O Tesouro de Margarida' e 'Peripécias de uma Abelhuda'",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "'Brincando no Escuro' e 'Coleção de Nariz'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'A Revolta dos Brinquedos' e 'A Guerra do Chocolate'",
+        "value": true
+      },
+      {
+        "id": 4,
+        "answer": "'Ratimbum! Pararatimbum!' e 'Três Reis na Floresta'",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "information": "Wagner Tiso foi fortemente influenciado pelas paisagens de Minas Gerais e pelo universo sonoro dos anos 1960 e 1970, tendo como referência o jazz, a música clássica e a MPB. ",
+    "question": "Tiso ganhpu grande notoriedade na década de 60, período em que integrou um inovador movimento musical mineiro. Que movimento foi esse?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'Missa dos Quilombos'",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "'Tambores de Minas'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'Último Trem'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "'Clube da Esquina'",
+        "value": true
+      }
+    ]
   }
 ]
 
 let idCount = 0
 let score = 0
-const randomIds = []
+let randomIds = []
 
 const header = document.querySelector('header')
 
@@ -317,7 +452,6 @@ const createCard = () => {
       bannerInfo.style.setProperty('display', 'none')
       quizBtn.textContent ='Jogar Novamente'
       header.style.setProperty('display', 'flex')
-      idCount = 0
     }
   })
 
@@ -325,6 +459,9 @@ const createCard = () => {
 }
 
 quizBtn.addEventListener('click', function() {
+  score = 0
+  idCount = 0
+  randomIds = []
   header.style.setProperty('display', 'none')
   info.style.setProperty('display', 'none')
   card.innerHTML = ''
