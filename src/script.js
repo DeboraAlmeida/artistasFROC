@@ -299,7 +299,7 @@ const cardData = [
   {
     "id": 12,
     "information": "Wagner Tiso foi fortemente influenciado pelas paisagens de Minas Gerais e pelo universo sonoro dos anos 1960 e 1970, tendo como referência o jazz, a música clássica e a MPB. ",
-    "question": "Tiso ganhpu grande notoriedade na década de 60, período em que integrou um inovador movimento musical mineiro. Que movimento foi esse?",
+    "question": "Tiso ganhou grande notoriedade na década de 60, período em que integrou um inovador movimento musical mineiro. Que movimento foi esse?",
     "answers": [
       {
         "id": 1,
@@ -319,6 +319,357 @@ const cardData = [
       {
         "id": 4,
         "answer": "'Clube da Esquina'",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "information": "Dennis Gray, cujo nome de batismo era 'Nelson', nasceu em Araçatuba, interior de São Paulo, em 1928. Mudou-se para a capital no final de 1943, onde começou seus estudos de ballet.",
+    "question": "Quem deu a Nelson o nome artístico 'Dennis Gray'?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Sua primeira professora de dança, Maria Olenewa",
+        "value": true
+      },
+      {
+        "id": 2,
+        "answer": "Tatiana Leskova, diretora Theatro Municipal do Rio de Janeiro, na época",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Seu primo, Graco Loureiro",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Seu grande amigo, Johnny Franklin",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "information": "Dennis Gray percorreu muitas cidades brasileiras com suas apresentações e conseguiu conquistar uma posição de coreógrafo de sucesso. Uma de suas coreografias, inclusive, fez sucesso no exterior.",
+    "question": "Quem incentivou Dennis Gray a tornar-se, além de bailarino, um coreógrafo?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Vaslav Veltchek, coreógrafo tcheco que dirigia a Escola de Dança e o Ballet do Municipal, na época",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Celso Eduardo Toledo Matos, seu melhor amigo durante a infância",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Dalal Achar, fundadora e diretora do Ballet do Rio de Janeiro, na época",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Tatiana Leskova, diretora Theatro Municipal do Rio de Janeiro, na época",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "information": "A convite de Tatiana Leskova, Nora Esteves fez o papel principal em um balé em Hong Kong, com o Hong Kong Ballet Company.",
+    "question": "Qual balé Nora Esteves dançou nessa ocasião?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "O Corsário",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "O Lago dos Cisnes",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "O Quebra-Nozes",
+        "value": true
+      },
+      {
+        "id": 4,
+        "answer": "Move",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "information": "Além de ser um dos maiores nomes da MPB, Chico Buarque também se destacou como dramaturgo e como escritor.",
+    "question": "Qual das opções abaixo apresenta o título de 2 romances escritos por Chico Buarque?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'Velhos' e 'Budapeste'",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "'Leite Derramado' e 'Estorvo'",
+        "value": true
+      },
+      {
+        "id": 3,
+        "answer": "'Gota d'água' e 'Os Ratos'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "'Torto Arado' e 'O Avesso da Pele'",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "information": "Chico Buarque é um ilustre compositor, cantor, dramaturgo e escritor brasileiro, amplamente reconhecido por suas contribuições à música popular brasileira (MPB) e à cultura do país. ",
+    "question": "Qual das opções abaixo apresenta 2 canções de Chico Buarque?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'Essa Moça tá diferente' e 'Deus Lhe Pague'",
+        "value": true
+      },
+      {
+        "id": 2,
+        "answer": "'Faltando um Pedaço' e 'Lambada de Serpente'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'Carnavália' e 'Ponta de Areia'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "'Aqui e Agora', 'Vento'",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "information": "Plínio Marcos é reconhecido por sua contribuição à arte brasileira por dar voz aos esquecidos e desafiar o status quo, utilizando o teatro como forma de denúncia social e crítica ao sistema.",
+    "question": "Qual das opções abaixo apresenta os títulos de 2 peças de Plínio Marcos?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'O Santo e a Porca' e 'Dois Perdidos Numa Noite Suja'",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "'Um Deus Dormiu Lá em Casa' e 'Ópera do Malandro'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'Roda Viva' e 'Apareceu a Margarida'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "'Navalha na Carne', 'Abajur Lilás'",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "information": "Baden Powell começou sua carreira muito jovem, destacando-se por sua habilidade no violão e por sua contribuição para a música popular brasileira, especialmente no desenvolvimento da bossa nova e do samba.",
+    "question": "Qual das opções abaixo apresenta os títulos de 2 álbuns de Powell?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'Depois do Carnaval' e 'O Compositor e o Cantor'",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "'Ópera do Malandro' e 'Vagamente'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'Mélancolie' e 'The Composer of Desafinado Plays'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "'Solitude on Guitar' e 'Samba in Préludio — Quand tu t'en vas'",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "information": "Hermeto Paschoal é considerado uma figura singular no cenário musical global, sendo muitas vezes chamado de 'bruxo' pela sua habilidade de extrair música de qualquer objeto ou situação.",
+    "question": "Aos 11 anos, Hermeto formou uma dupla com seu irmão para tocar fole e pandeiro em bailes regionais. Qual o nome artŕitico que os irmãos adotaram para a dupla?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Meninos Pascoal",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Os Galegos do Pascoal",
+        "value": true
+      },
+      {
+        "id": 3,
+        "answer": "Os Meninos da Canoa",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Os Calças-Curtas",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "information": "Nos anos 1930, ela ganhou fama com suas performances vibrantes e sua personalidade carismática, tornando-se um símbolo brasileiro. Sua imagem exótica, muitas vezes adornada com frutas tropicais, e seu estilo único de se vestir a tornaram um ícone da cultura brasileira.",
+    "question": "No século XX, uma importante figura promoveu a cultura brasileira no exterior com sua arte única. Quem foi essa pessoa?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Rose Enne",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Elis Regina",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Carmen Miranda",
+        "value": true
+      },
+      {
+        "id": 4,
+        "answer": "Nora Esteves",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "information": "Carmen Miranda conquistou Hollywood, estrelando diversos filmes na década de 1940.",
+    "question": "Entre os títulos que compõe a carreira cenamtográfica de Carmen Miranda, podemos citar:",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Quando o Coração Fala",
+        "value": true
+      },
+      {
+        "id": 2,
+        "answer": "Aquarela do brasil",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Chiquitita Banana",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "E o Mundo não se Acabou",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "information": "Lutou por questões políticas do país e também pelos direito dos músicos brasileiros, chegando a particiapar de muitas reuniões em Brasília e presidir a Assim - Associação de Intérpretes e de Músicos.",
+    "question": "A qual dos seguintes grandes nomes da música brasileira a passagem acima se refere?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Wagner Tiso",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Chico Buarque",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Rose Anne",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Elis Regina",
+        "value": true
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "information": "Ao longo de sua carreira, Gismonti se destacou por suas composições inovadoras, explorando sonoridades e ritmos que vão do erudito ao popular, incluindo influências do jazz e da música tradicional brasileira.",
+    "question": "Qual das opções abaixo traz os títulos de 2 grandes trabalhos desse multi-instrumentista e compositor brasileiro?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "'Frevo' e 'Baião Malandro'",
+        "value": true
+      },
+      {
+        "id": 2,
+        "answer": "'Sonho de papel' e 'Bambu bambu'",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "'Os pássaros' e 'Desfeixo'",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "E'João e Maria' e 'Meu caro amigo'",
+        "value": false
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "information": "Um de seus projetos mais emblemáticos é a gravação e interpretação das obras de Villa-Lobos, o que contribuiu para popularizar a música clássica brasileira.",
+    "question": "O trecho acima se refere ao trabalho de qual dos seguintes grandes nomes da música brasileira?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Rose Enne",
+        "value": false
+      },
+      {
+        "id": 2,
+        "answer": "Wagner Tiso",
+        "value": false
+      },
+      {
+        "id": 3,
+        "answer": "Robertinho Silva",
+        "value": false
+      },
+      {
+        "id": 4,
+        "answer": "Arthur Moreira Lima",
         "value": true
       }
     ]
